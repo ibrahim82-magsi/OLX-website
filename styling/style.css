@@ -6,16 +6,28 @@
 
 .main-div{
     /* background-color: pink; */
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin: 0px 10vw;
+    flex-wrap: wrap;
 }
 
 .Nav-logos{
-    
+    /* padding: 10px; */
     width: 20%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    border-radius: 25px;
 }
 
+
+
+
+ .navbar-container{
+    height: 10vh;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+} 
 
 .text{
     font-family: "Roboto", sans-serif;
@@ -30,27 +42,36 @@
 }
 
 
-.input-container{
-    margin-top: 20px;
+.input-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; 
+    
+    margin: 10px;
     gap: 10px;
-    padding: 10px 0px 16px;
+  }
 
-}
+
+
 .select-container{
 
-padding: 0px 0px 0px 12px;
 
-/* width: 18%;
-height: 23px; */
+height: 24.3px;
+
+
 border: 1px solid black;
 display: flex;
 align-items: center;
 justify-content: center;
 gap: 5px;
+border-radius: 4px
 
 
 }
+
+
+
 
 .location{
     color: white;
@@ -59,6 +80,8 @@ gap: 5px;
 }
 
 .search-container{
+    height: 24.3px;
+    width: 50vw;
 padding: 0px 0px 0px 12px;
     /* width: 58%;
 height: 23px; */
@@ -66,9 +89,9 @@ border: 1px solid black;
 display: flex;
 align-items: center;
 justify-content: center;
-gap:
+gap:5px;
 
-5px;
+border-radius: 4px
 }
 
 .search-box{
@@ -77,5 +100,93 @@ gap:
     color: white;
     height: 23px;
     width: 2vw;
-    text-align: center;
+    padding: 2px;
+    margin-left: 38.4vw;
+    
 }
+
+.login-sell{
+    
+    border-radius: 25px;
+    padding: 2px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, yellow, skyblue, blue) 1;
+
+}
+
+.text-sell{
+    width: 3vw;
+    font-family: "Roboto", sans-serif;
+    color: #002f34;
+
+}
+
+
+
+
+
+@media (min-width: 869px) {
+    .logo-container {
+      width: 40%;
+    }
+  
+
+    .search-box{
+        display: none;
+        }
+
+
+    .input-container {
+      width: 55%;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main-div {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+  
+    .logo-container {
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+  
+    .input-container {
+      width: 100%;
+      flex-direction: column;
+      gap: 8px;
+      align-items: stretch;
+    }
+  
+    .select-container,
+    .search-container {
+      width: 100%;
+    }
+  
+    .search-box{
+        display: none;
+      
+    }
+  
+    .login-sell {
+      align-self: flex-end;
+    }
+  }
+/* responsiveness ended */
+
+/* Nav bar ended */
+
+
+hr{
+    border: 1px solid lightgray;
+}
+
