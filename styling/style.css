@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+@font-face{
+  font-family: "Roboto", sans-serif;
+
+}
+a {
+  text-decoration: none;
+}
+
 .main-div{
     /* background-color: pink; */
     width: 80%;
+    
     margin: 0px 10vw;
     flex-wrap: wrap;
 }
@@ -125,12 +134,19 @@ border-radius: 4px
 
 
 
-@media (min-width: 620px) {
+@media (max-width: 620px) {
     .logo-container {
       width: 40%;
     }
-  
 
+    .carasol-image{
+    display: none;
+  }
+  
+    .olx-image{
+      display: none;
+
+    }
     .search-box{
         display: none;
         }
@@ -148,6 +164,17 @@ border-radius: 4px
       margin: 0 auto;
     }
   
+
+    .olx-image{
+   display: none;
+    }
+
+
+    .carasol-image{
+     
+      display: none;
+    }
+
     .navbar-container {
       flex-direction: column;
       align-items: flex-start;
@@ -190,3 +217,126 @@ hr{
     border: 1px solid lightgray;
 }
 
+.catagory-container{
+    display: flex;
+    align-items: center;
+  font-family: "Roboto", sans-serif;
+
+    gap: 20px;
+
+}
+
+
+
+
+
+.content-box {
+  display: none;
+  padding: 10px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+#toggle-box:checked + .content-box {
+  display: block;
+}
+
+.toggle-button {
+  display: inline-block;
+  
+  color: black;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.carasol-image{
+  margin-top: 20px;
+
+}
+
+.olx-image{
+  display: block;
+  margin-left: 30vh;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.categories{
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  
+
+}
+
+
+.small-images{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  
+
+}
+
+.small-div{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.small{
+  height: 100px;
+}
+
+.mobiles{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  
+
+}
+
+.mobike-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-tag{
+  color: blue;
+  
+}
+
+.card{
+height: 30vh;
+width: 22vw;
+}
+
+
+.addres-card{
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  height: 15vh;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  
+}
+
+.card-image{
+  height: 22vh;
+  width: 22vw;
+}
+
+.cards-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
